@@ -1,0 +1,98 @@
+{
+  "projectType": "saas",
+  "projectName": "DADDO",
+  "projectDescription": "A comprehensive business management platform for inventory control, sales tracking, and analytics for small businesses.",
+  "theme": "palm",
+  "primaryColor": "#7c3aed",
+  "lightColor": "#a855f7",
+  "darkColor": "#6d28d9",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "features",
+              "getting-started"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/products",
+              "features/sales",
+              "features/dashboard",
+              "features/catalog"
+            ]
+          },
+          {
+            "group": "User Guide",
+            "pages": [
+              "guide/authentication",
+              "guide/profile-management",
+              "guide/catalog-sharing"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/faq",
+              "support/troubleshooting"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/products",
+              "api/sales",
+              "api/dashboard",
+              "api/users"
+            ]
+          },
+          {
+            "group": "Technical",
+            "pages": [
+              "api/redux-store",
+              "api/error-handling"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Product catalog management with images and categories",
+    "Sales transaction tracking and recording",
+    "Real-time analytics dashboard with KPIs",
+    "Public catalog sharing via QR code and links",
+    "User authentication with password recovery",
+    "Multi-tenant business management"
+  ],
+  "publicApiSurface": [
+    "POST /products - Create product",
+    "GET /products - List products",
+    "PUT /products/:id - Update product",
+    "DELETE /products/:id - Delete product",
+    "POST /sells - Create sale",
+    "GET /sells - List sales",
+    "GET /dashboard - Get dashboard metrics",
+    "POST /auth/login - User login",
+    "POST /auth/register - User registration",
+    "GET /catalog/:userId - Public catalog view"
+  ]
+}
